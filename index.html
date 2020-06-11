@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="topBar">
+        <h3 id="highscores"><a href="highscores.html">View Highscores</a></h3>
+        <h3 id="time">Time: 00</h3>
+    </div>
+
+    <section id="mainContent">
+        <article>
+            <h1 class="codeQuizTitle">Code Quiz</h1>
+        </article>
+        <article>
+            <p>This is a coding quiz</p>
+        </article>
+        <button id="startQuiz">Start</button>
+    </section>
+
+    <section id="question1">
+        <h1 class="questions">Commonly used data types DO NOT include?</h1>
+        <button class="questionWrongOptions">A: Strings</button>
+        <button class="questionWrongOptions">B: Boleans</button>
+        <button class="questionRightOptions">C: Alerts</button>
+        <button class="questionWrongOptions">D: Numbers</button>
+    </section>
+
+    <section id="question2">
+        <h1 class="questions">The condition in a if / else statement is enclosed within _____</h1>
+        <button class="questionWrongOptions">A: Quotes</button>
+        <button class="questionWrongOptions">B: Curly Brackets</button>
+        <button class="questionRightOptions">C: Parentheses</button>
+        <button class="questionWrongOptions">D: Square Brackets</button>
+    </section>
+
+    <section id="question3">
+        <h1 class="questions">Arrays in javascript can be used to store _____</h1>
+        <button class="questionWrongOptions">A: Numbers and Strings</button>
+        <button class="questionWrongOptions">B: Other Arrays</button>
+        <button class="questionWrongOptions">C: Boleans</button>
+        <button class="questionRightOptions">D: All of the Above</button>
+    </section>
+
+    <section id="question4">
+        <h1 class="questions">String values must be enclosed within ____ when being assigned to variables</h1>
+        <button class="questionWrongOptions">A: Commas</button>
+        <button class="questionWrongOptions">B: Curly Brackets</button>
+        <button class="questionRightOptions">C: Quotes</button>
+        <button class="questionWrongOptions">D: Parentheses</button>
+    </section>
+
+    <section id="question5">
+        <h1 class="questions">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
+        <button class="questionWrongOptions">A: Javascript</button>
+        <button class="questionWrongOptions">B: Terminal/Bash</button>
+        <button class="questionWrongOptions">C: For Loops</button>
+        <button class="questionRightOptions">D: Console Log</button>
+    </section>
+
+    <section id="quizOver">
+        <h1>The quiz is over</h1>
+        <h3 id="score">Your score is: 00</h3>
+        <label for="initials">Enter Your Initails: </label>
+        <input id="initialsInput" name="initials" type="text">
+        <input type="submit" name="submit" id="sumbit">
+    </section>
+
+    <section id="wrong">
+        <h3 id="wrongText">Wrong</h3>
+    </section>
+
+    <section id="right">
+        <h3 id="rightText">Correct</h3>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
