@@ -68,6 +68,7 @@ function nextQuestionWrong(){
         if (totalSeconds < 0){
             score.textContent = ("Your score is: 0");
             timer.innerHTML = "Time: 0";
+            totalSeconds = 0;
         }else{
             score.textContent = ("Your score is:" + totalSeconds);
         }
