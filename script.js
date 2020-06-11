@@ -160,7 +160,10 @@ function startTimer(){
 
 //Adds score and initals to local storage
 function addToHighScores() {
-    localStorage.setItem("initials", initialsInput.value)
-    localStorage.setItem("score", totalSeconds);
+    var scoreObj = {
+        initials: initialsInput.value,
+        score: totalSeconds
+    };
+    localStorage.setItem("scoreInit", JSON.stringify(scoreObj));
     window.location = 'highscores.html';
 };
